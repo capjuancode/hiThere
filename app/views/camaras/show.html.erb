@@ -1,8 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @camara.title %>
+  <strong>Title:</strong><br>
+  <%= @camara.title %><br>
+
+  <strong>Img:</strong><br>
+  <%= image_tag @camara.img.url(:medium) %>
 </p>
 
 <%= link_to 'Edit', edit_camara_path(@camara) %> |

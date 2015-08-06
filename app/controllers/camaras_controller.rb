@@ -69,6 +69,6 @@ class CamarasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def camara_params
-      params.require(:camara).permit(:title)
+      params.require(:camara).permit(:title, :img)
     end
 end
