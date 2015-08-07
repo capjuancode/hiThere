@@ -1,6 +1,6 @@
 class CamarasController < ApplicationController
   before_action :set_camara, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, except: [:index, :show]
   # GET /camaras
   # GET /camaras.json
   def index
@@ -14,7 +14,7 @@ class CamarasController < ApplicationController
 
   # GET /camaras/new
   def new
-    @camara = Camara.new
+    @camara = current_user.camaras.build
   end
 
   # GET /camaras/1/edit
@@ -24,7 +24,7 @@ class CamarasController < ApplicationController
   # POST /camaras
   # POST /camaras.json
   def create
-    @camara = Camara.new(camara_params)
+    @camara = current_user.camaras.build(camara_params)
 
     respond_to do |format|
       if @camara.save
