@@ -10,6 +10,7 @@ class CamarasController < ApplicationController
   # GET /camaras/1
   # GET /camaras/1.json
   def show
+    @review = Review.new
   end
 
   # GET /camaras/new

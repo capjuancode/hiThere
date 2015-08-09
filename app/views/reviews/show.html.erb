@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @review.comment %>
+</p>
+
+<p>
+  <strong>Camara:</strong>
+  <%= @review.camara.title %>
+</p>
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<% if @review.camara.nil? %>
+<%= link_to 'Back', reviews_path %>
+<% else %>
+<%= link_to 'Back', @review.camara %>
+<% end %>
