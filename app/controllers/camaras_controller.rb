@@ -1,6 +1,7 @@
 class CamarasController < ApplicationController
   before_action :set_camara, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
+  before_filter :require_permission, only: :edit
   # GET /camaras
   # GET /camaras.json
   def index
@@ -41,15 +42,15 @@ class CamarasController < ApplicationController
   # PATCH/PUT /camaras/1
   # PATCH/PUT /camaras/1.json
   def update
-    respond_to do |format|
-      if @camara.update(camara_params)
-        format.html { redirect_to @camara, notice: 'Camara was successfully updated.' }
-        format.json { render :show, status: :ok, location: @camara }
-      else
-        format.html { render :edit }
-        format.json { render json: @camara.errors, status: :unprocessable_entity }
+      respond_to do |format|
+        if @camara.update(camara_params)
+          format.html { redirect_to @camara, notice: 'Camara was successfully updated.' }
+          format.json { render :show, status: :ok, location: @camara }
+        else
+          format.html { render :edit }
+          format.json { render json: @camara.errors, status: :unprocessable_entity }
+        end
       end
-    end
   end
 
   # DELETE /camaras/1
@@ -63,6 +64,14 @@ class CamarasController < ApplicationController
   end
 
   private
+
+    def require_permission
+      if current_user != Camara.find(params[:id]).user
+        redirect_to root_path
+      end
+
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_camara
       @camara = Camara.find(params[:id])
