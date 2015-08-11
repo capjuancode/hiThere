@@ -1,3 +1,141 @@
 // Place all the styles related to the Camaras controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#buttons * {
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+
+}
+
+#buttons {
+    width: 300px;
+    display: -webkit-inline-box;
+}
+
+
+.butFrame {
+  font-size: 1.5em;
+  font-family: oswald;
+  font-weight: 300;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.butFrame .heading {
+  text-align: center;
+  font-weight: 400;
+  z-index: 999;
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  overflow: hidden;
+  left: 0px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.last_comment {
+  z-index: 999;
+  text-decoration: none;
+}
+
+
+
+.butFrame:after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  text-align: center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 100%;
+  height: 100%;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+/* Hover Effects */
+
+.butFrame:hover .heading {
+  height: 0px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.butFrame .hover {
+  z-index: 999;
+  position: absolute;
+  overflow: hidden;
+  color: #fff;
+  font-size: 0.8em;
+  text-align: Center;
+  width: 100%;
+  height: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.1);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.butFrame:hover .hover {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.butFrame:hover:after {
+  width: 120%;
+  height: 120%;
+  left: -50px;
+  top: -20px;
+}

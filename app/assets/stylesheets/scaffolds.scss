@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: blue;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -71,5 +71,55 @@ div {
     list-style: square;
   }
 }
+@media (min-width: 700px) {
 
-// this is test 
+    html,body  {background-color: black;}
+
+    .yield {
+    height: 750px;
+    background-color: black;
+}
+.img_container {
+max-height: 500px;
+background-color: black;
+overflow-y: auto;
+}
+
+.index_img {
+margin: 10px;
+float: left;
+}
+ }//end 700px
+@media only screen
+    and (min-device-width : 414px)
+    and (max-device-width : 736px)
+    and (device-width : 414px)
+    and (device-height : 736px)
+    and (orientation : portrait)
+    and (-webkit-min-device-pixel-ratio : 3)
+    and (-webkit-device-pixel-ratio : 3)    {
+
+
+html,body  {background-color: black;
+      width: 414px;
+    margin: 0;
+  }
+
+  .img_container {
+    background-color: black;
+    width: 414px;
+    max-height: 656px;
+    overflow-y: auto;
+}
+    .yield{width: 414px}
+
+    img.index_img {
+    width: 100%;
+}
+
+#buttons {
+/* width: 300px; */
+display: inline;
+}
+
+ }//en media
