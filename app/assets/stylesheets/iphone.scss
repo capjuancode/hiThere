@@ -1,10 +1,7 @@
-@media only screen
-    and (min-device-width : 980px)
-    and (max-device-width : 736px)
-      {
+@media only screen and (max-width: 61.25em){
 
 
-html,body  {background-color: black;
+html,body  {background-color: yellow;
       width: 100%;
     margin: 0;
   }
@@ -20,8 +17,8 @@ html,body  {background-color: black;
     width: 100%;
 }
 
-#buttons {
-/* width: 300px; */
+.buttons {
+width: 100%;
 display: inline;
 }
 

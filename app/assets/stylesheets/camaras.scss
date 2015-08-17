@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#buttons * {
+.buttons * {
   -moz-transition: all .5s ease;
   -webkit-transition: all .5s ease;
   -ms-transition: all .5s ease;
@@ -11,7 +11,7 @@
 
 }
 
-#buttons {
+.buttons {
     width: 300px;
     display: -webkit-inline-box;
 }
