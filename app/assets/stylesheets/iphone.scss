@@ -1,0 +1,28 @@
+@media only screen
+    and (min-device-width : 980px)
+    and (max-device-width : 736px)
+      {
+
+
+html,body  {background-color: black;
+      width: 100%;
+    margin: 0;
+  }
+
+  .img_container {
+    background-color: black;
+    width: 980px;
+    overflow-y: auto;
+}
+    .yield{width: 980px}
+
+    img.index_img {
+    width: 100%;
+}
+
+#buttons {
+/* width: 300px; */
+display: inline;
+}
+
+ }//en media
