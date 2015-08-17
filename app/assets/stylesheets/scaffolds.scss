@@ -5,8 +5,11 @@ body {
   font-size: 13px;
   line-height: 18px;
 }
-
+a:visited {
+    color: white;
+}
 p, ol, ul, td {
+  color: white;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -19,20 +22,21 @@ pre {
 }
 
 a {
-  color: #000;
-
-  &:visited {
-    color: #666;
-  }
-
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
+  color: white;
 }
 
+:visited {
+  color: #666;
+}
+
+:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+
 div {
-  &.field, &.actions {
+  .field, .actions {
     margin-bottom: 10px;
   }
 }
