@@ -22,8 +22,8 @@
     <%= f.text_field :camara_id %>
   </div>
   <%else%>
-  <%= f.label :camara_id %><br>
-  <%= f.hidden_field :camara_id, readonly: true, value: @camara.id %>
+    <%= f.label :camara_id %><br>
+    <%= f.text_field :camara_id, readonly: true, value: @camara.id %>
   <%end%>
 
   <div class="actions">
