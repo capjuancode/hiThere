@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem "paperclip", "~> 4.3"
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
+gem 'dotenv-rails', :groups => [:development, :test]
 gem 'devise', '~> 3.5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
