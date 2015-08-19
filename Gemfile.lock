@@ -174,14 +174,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk (< 2.0)
+  aws-sdk
   byebug
   coffee-rails (~> 4.1.0)
   devise (~> 3.5.1)
   dotenv-rails
   jbuilder (~> 2.0)
   jquery-rails
-  paperclip (~> 4.3)
+  paperclip
   pg
   rails (= 4.2.3)
   sass-rails (~> 5.0)
