@@ -1,12 +1,15 @@
 body {
-  background-color: blue;
+  background-color: black;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
-
+a:visited {
+    color: white;
+}
 p, ol, ul, td {
+  color: white;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -19,20 +22,19 @@ pre {
 }
 
 a {
-  color: #000;
-
+  color: white;
   &:visited {
-    color: #666;
+    color: white;
   }
-
   &:hover {
-    color: #fff;
+    color: white;
     background-color: #000;
   }
 }
 
+
 div {
-  &.field, &.actions {
+  .field, .actions {
     margin-bottom: 10px;
   }
 }
@@ -71,51 +73,3 @@ div {
     list-style: square;
   }
 }
-@media (min-width: 700px) {
-
-    html,body  {background-color: black;}
-
-    .yield {
-    height: 750px;
-    background-color: black;
-}
-.img_container {
-max-height: 500px;
-background-color: black;
-overflow-y: auto;
-}
-
-.index_img {
-margin: 10px;
-float: left;
-}
- }//end 700px
-@media only screen
-    and (min-device-width : 414px)
-    and (max-device-width : 736px)
-      {
-
-
-html,body  {background-color: black;
-      width: 414px;
-    margin: 0;
-  }
-
-  .img_container {
-    background-color: black;
-    width: 414px;
-    max-height: 656px;
-    overflow-y: auto;
-}
-    .yield{width: 414px}
-
-    img.index_img {
-    width: 100%;
-}
-
-#buttons {
-/* width: 300px; */
-display: inline;
-}
-
- }//en media

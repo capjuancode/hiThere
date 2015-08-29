@@ -1,0 +1,28 @@
+@media only screen and (max-width: 61.25em){
+
+
+html,body  {background-color: yellow;
+      width: 100%;
+    margin: 0;
+  }
+
+.butFrame {
+  height: 370px;
+}
+  .img_container {
+    background-color: black;
+    width: 980px;
+    overflow-y: auto;
+}
+    .yield{width: 980px}
+
+    img.index_img {
+    width: 100%;
+}
+
+.buttons {
+width: 100%;
+display: inline;
+}
+
+ }//en media

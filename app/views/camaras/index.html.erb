@@ -11,7 +11,7 @@
 
 
     <% @camaras.each do |camara| %>
-    <div id="buttons">
+    <div class="buttons">
       <div class="butFrame">
         <%= image_tag camara.img.url(:thumb), class:"index_img" %>
         <div class="hover">
@@ -20,7 +20,7 @@
         <%else%>
           <%=link_to "#{camara.reviews.last.comment}", camara, class: "last_comment"%>
         <%end%>
-      </div>
+        </div>
     </div>
   </div>
 
