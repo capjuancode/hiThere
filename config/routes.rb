@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  resources :checkins
+
+  resources :checkins do
+    member do
+      post :join
+    end
+  end
+
   resources :reviews
   devise_for :users
   resources :camaras

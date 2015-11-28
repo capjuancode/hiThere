@@ -1,5 +1,5 @@
 class CheckinsController < ApplicationController
-  before_action :set_checkin, only: [:show, :edit, :update, :destroy]
+  before_action :set_checkin, only: [:show, :edit, :update, :destroy, :join]
 
   # GET /checkins
   # GET /checkins.json
@@ -10,6 +10,7 @@ class CheckinsController < ApplicationController
   # GET /checkins/1
   # GET /checkins/1.json
   def show
+    @users=User.all
   end
 
   # GET /checkins/new
@@ -21,6 +22,24 @@ class CheckinsController < ApplicationController
   def edit
   end
 
+  # turns user check_id to corrent checkin
+  def join
+    user=current_user
+    user.checkin_id=@checkin.id
+    user.save
+
+
+      respond_to do |format|
+        if current_user.checkin_id == @checkin.id
+          format.html { redirect_to @checkin, notice: 'You have Join this location.' }
+          format.json { render :show, status: :ok, location: @checkin }
+        else
+          format.html { redirect_to @checkin, notice: 'You could not Join this location.' }
+          format.json { render json: @checkin.errors, status: :unprocessable_entity }
+        end
+      end
+
+  end
   # POST /checkins
   # POST /checkins.json
   def create
@@ -30,9 +49,6 @@ class CheckinsController < ApplicationController
       if @checkin.save
         format.html { redirect_to @checkin, notice: 'Checkin was successfully created.' }
         format.json { render :show, status: :created, location: @checkin }
-      else
-        format.html { render :new }
-        format.json { render json: @checkin.errors, status: :unprocessable_entity }
       end
     end
   end
