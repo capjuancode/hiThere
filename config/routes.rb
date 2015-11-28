@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :checkins
   resources :reviews
   devise_for :users
   resources :camaras
