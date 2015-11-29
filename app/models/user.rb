@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :camaras
   has_many :checkins
+  has_many :groups, :through => :checkins
   #
   # after_save :addUserToGroup
   #

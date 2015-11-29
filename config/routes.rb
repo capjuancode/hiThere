@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
+
+  
   resources :checkins do
-    member do
+      resources :groups
+      member do
       post :join
     end
   end

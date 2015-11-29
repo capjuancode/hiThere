@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+  <strong>User:</strong>
+  <%= @group.user_id %>
+</p>
+
+<p>
+  <strong>Group name:</strong>
+  <%= @group.group_name %>
+</p>
+
+<p>
+  <strong>Checkin:</strong>
+  <%= @group.checkin.location_name %>
+</p>
+
+<%= link_to 'Edit', edit_checkin_group_path(@checkin, @group) %> |
+<%= link_to 'Back', checkin_groups_path(@checkin) %>
