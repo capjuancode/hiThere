@@ -6,13 +6,6 @@ class User < ActiveRecord::Base
   has_many :camaras
   has_many :checkins
   has_many :groups, :through => :checkins
-  #
-  # after_save :addUserToGroup
-  #
-  # def addUserToGroup
-  #   user=User.find(self.user_id)
-  #   user.checkin_id = self.id
-  #   user.save
-  # end
-  #
+  has_many :grouping_table
+
 end

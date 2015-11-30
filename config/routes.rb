@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
 
   
+  resources :grouping_tables
   resources :checkins do
       resources :groups
       member do

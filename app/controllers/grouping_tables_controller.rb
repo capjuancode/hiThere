@@ -1,0 +1,2 @@
+class GroupingTablesController < ApplicationController
+end
