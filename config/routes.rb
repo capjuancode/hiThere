@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
 
-  
-  resources :grouping_tables
+
+
   resources :checkins do
-      resources :groups
+      resources :groups do
+        resources :grouping_tables
+      end
       member do
       post :join
     end

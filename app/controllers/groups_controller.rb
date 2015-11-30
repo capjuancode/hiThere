@@ -30,7 +30,6 @@ class GroupsController < ApplicationController
   # POST /groups
   # POST /groups.json
   def create
-    # @group = current_user.groups.new(group_params)
     @group = @checkin.groups.new(group_params)
     respond_to do |format|
       if @group.save
@@ -80,6 +79,6 @@ class GroupsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def group_params
-      params.require(:group).permit(:Checkin_id, :user_id, :group_name, :checkin_id)
+      params.require(:group).permit( :user_id, :group_name, :checkin_id)
     end
 end

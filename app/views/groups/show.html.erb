@@ -16,6 +16,7 @@
   <strong>Checkin:</strong>
   <%= @group.checkin.location_name %>
 </p>
-
+<%= link_to 'Join Group', new_checkin_group_grouping_table_path(@checkin, @group) %>
+<br><br>
 <%= link_to 'Edit', edit_checkin_group_path(@checkin, @group) %> |
 <%= link_to 'Back', checkin_groups_path(@checkin) %>
