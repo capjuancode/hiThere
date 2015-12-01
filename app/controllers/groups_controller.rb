@@ -6,7 +6,9 @@ class GroupsController < ApplicationController
   # GET /groups.json
   def index
     @groups = @checkin.groups.all
-
+    user=User.find(@checkin.user_id)
+    user.group_id=nil
+    user.save
 
   end
 
@@ -22,6 +24,7 @@ class GroupsController < ApplicationController
     @group.user_id=current_user.id
 
   end
+
 
   # GET /groups/1/edit
   def edit

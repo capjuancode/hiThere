@@ -13,7 +13,7 @@ class GroupingTablesController < ApplicationController
     @grouping_table = @group.grouping_table.new(grouping_table_params)
     respond_to do |format|
       if @grouping_table.save
-        format.html { redirect_to checkin_group_path(@checkin, @group), notice: 'You have successfully Join this Group.'}
+        format.html { redirect_to checkin_group_path(@checkin, @group), notice: 'You have successfully Join this Group Pending Admin permission.'}
         format.json { render :show, status: :created, location: @grouping_table }
       else
         format.html { render :new }

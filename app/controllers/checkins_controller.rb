@@ -11,6 +11,7 @@ class CheckinsController < ApplicationController
   # GET /checkins/1.json
   def show
     @users=User.all
+    @groups = @checkin.groups.all
   end
 
   # GET /checkins/new

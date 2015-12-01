@@ -4,13 +4,16 @@ Rails.application.routes.draw do
 
 
   resources :checkins do
-      resources :groups do
-        resources :grouping_tables
-      end
       member do
       post :join
     end
-  end
+      resources :groups do
+        member do
+        post :join
+      end
+        resources :grouping_tables
+      end
+    end
 
   resources :reviews
   devise_for :users
