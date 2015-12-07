@@ -1,10 +1,10 @@
 class CheckinsController < ApplicationController
   before_action :set_checkin, only: [:show, :edit, :update, :destroy, :join]
-
+  before_action :authenticate_user!
   # GET /checkins
   # GET /checkins.json
   def index
-    
+
     @checkins = Checkin.all
     current_user.group_id=nil
     current_user.checkin_id=nil

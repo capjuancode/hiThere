@@ -1,6 +1,6 @@
 class CamarasController < ApplicationController
   before_action :set_camara, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!
   before_filter :require_permission, only: :edit
   # GET /camaras
   # GET /camaras.json

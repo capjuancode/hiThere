@@ -2,7 +2,7 @@ class GroupingTablesController < ApplicationController
 
   before_filter :load_group
   before_filter :set_checkin
-
+  before_action :authenticate_user!
   def new
     @grouping_table = @group.grouping_table.new
     @grouping_table.user_id=current_user.id
