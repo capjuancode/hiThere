@@ -4,6 +4,7 @@ class CheckinsController < ApplicationController
   # GET /checkins
   # GET /checkins.json
   def index
+    
     @checkins = Checkin.all
     current_user.group_id=nil
     current_user.checkin_id=nil
