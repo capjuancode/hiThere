@@ -9,19 +9,16 @@ class GroupingTablesController < ApplicationController
     @grouping_table.checkin_id=@checkin.id
   end
 
-  def show
-      @camaras = Camara.all
-      
-  end
+
 
   def create
     @grouping_table = @group.grouping_table.new(grouping_table_params)
     respond_to do |format|
       if @grouping_table.save
-        format.html { redirect_to checkin_group_path(@checkin, @group), notice: 'You have successfully Join this Group Pending Admin permission.'}
+        format.html { redirect_to camaras_path, notice: 'You have successfully Join this Group Pending Admin permission.'}
         format.json { render :show, status: :created, location: @grouping_table }
       else
-        format.html { render :new }
+        format.html { redirect_to camaras_path, notice: 'Wellcome Back! :).' }
         format.json { render json: @grouping_table.errors, status: :unprocessable_entity }
       end
     end

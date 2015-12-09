@@ -27,7 +27,7 @@ class CamarasController < ApplicationController
   # POST /camaras.json
   def create
     @camara = current_user.camaras.build(camara_params)
-
+    @camara.group_id=current_user.group_id
     respond_to do |format|
       if @camara.save
         format.html { redirect_to @camara, notice: 'Camara was successfully created.' }
