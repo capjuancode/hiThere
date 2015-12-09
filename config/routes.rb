@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
 
 
+ get 'pages/groups'
+ root 'pages#home'
 
   resources :checkins do
       member do
@@ -22,7 +24,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'camaras#index'
+ #   get 'camaras#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

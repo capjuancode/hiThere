@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+<%= current_user.id %>|
+<%= current_user.checkin_id %>|
+<%= current_user.group_id %>.
 <h1>Listing Groups</h1>
 
 <table>
@@ -30,4 +33,5 @@
 
 <br>
 <%= link_to 'Back to Locations', checkin_path(@checkin) %> |
-<%= link_to 'New Group', new_checkin_group_path(@checkin) %>
+<%= link_to 'New Group', new_checkin_group_path(@checkin) %>|
+<%= link_to 'Back Home', root_path %>

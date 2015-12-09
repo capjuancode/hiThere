@@ -11,6 +11,7 @@
 
 
     <% @camaras.each do |camara| %>
+    <% if camara.group_id == current_user.group_id %>
     <div class="buttons">
       <div class="butFrame">
         <%= image_tag camara.img.url(:thumb), class:"index_img" %>

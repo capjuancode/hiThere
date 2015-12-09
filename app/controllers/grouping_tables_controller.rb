@@ -9,6 +9,11 @@ class GroupingTablesController < ApplicationController
     @grouping_table.checkin_id=@checkin.id
   end
 
+  def show
+      @camaras = Camara.all
+      
+  end
+
   def create
     @grouping_table = @group.grouping_table.new(grouping_table_params)
     respond_to do |format|

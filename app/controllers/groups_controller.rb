@@ -15,6 +15,8 @@ class GroupsController < ApplicationController
   # GET /groups/1
   # GET /groups/1.json
   def show
+    current_user.checkin_id, current_user.group_id = params[:checkin_id], params[:id]
+    current_user.save
   end
 
   # GET /groups/new
