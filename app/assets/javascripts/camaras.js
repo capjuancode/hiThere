@@ -2,12 +2,10 @@
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 $("document").ready(function(){
-
     $(".img_up").change(function() {
-                $('.img_up_sub').click();
-            });
-
-
+        setTimeout(check, 2000);
+        $('.img_up_sub').click();
+    });
 });
 
 function camara_action(e){
