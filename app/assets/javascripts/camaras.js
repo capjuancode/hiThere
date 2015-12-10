@@ -3,7 +3,7 @@
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 $("document").ready(function(){
     $(".img_up").change(function() {
-        setTimeout(check, 2000);
+        setTimeout(2000);
         $('.img_up_sub').click();
     });
 });
