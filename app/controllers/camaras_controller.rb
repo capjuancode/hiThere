@@ -31,7 +31,7 @@ class CamarasController < ApplicationController
     @camara.group_id=current_user.group_id
     respond_to do |format|
       if @camara.save
-        format.html { redirect_to @camara, notice: 'Camara was successfully created.' }
+        format.html { redirect_to camaras_path, notice: 'Camara was successfully created.' }
         format.json { render :show, status: :created, location: @camara }
       else
         format.html { render :new }
