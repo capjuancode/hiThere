@@ -1,7 +1,7 @@
 // Place all the styles related to the Camaras controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+@import 'font-awesome.css';
 .buttons * {
   -moz-transition: all .5s ease;
   -webkit-transition: all .5s ease;
@@ -100,11 +100,11 @@
 }
 
 .butFrame .hover {
-  z-index: 999;
+  z-index: 10;
   position: absolute;
   overflow: hidden;
   color: #fff;
-  font-size: 0.8em;
+  font-size: 2em;
   text-align: Center;
   width: 100%;
   height: 0px;
@@ -138,4 +138,41 @@
   height: 120%;
   left: -50px;
   top: -20px;
+}
+
+// footer button
+.menu_fotter_index_camara{
+  text-decoration: none;
+  .img_up_sub{
+    visibility: hidden;
+  }
+  .left_button{
+    color: black;
+    position: fixed;
+    bottom: 25px;
+    left: 62px;
+    width: 100%;
+    z-index: 100;
+    text-decoration: none;
+    font-size: 3em;
+  }
+  .fa{
+    position: fixed;
+    z-index: 100;
+    bottom: 41px;
+    left: 3.22em;
+    color: gray;
+    font-size: 10em !important;
+    margin: 0 auto;
+  }
+  .right_button{
+    color: black;
+  position: fixed;
+  bottom: 25px;
+  left: 700px;
+  width: 100%;
+  z-index: 100;
+  font-size: 3em;
+  text-decoration: none;
+  }
 }

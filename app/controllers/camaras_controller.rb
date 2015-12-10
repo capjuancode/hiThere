@@ -6,6 +6,7 @@ class CamarasController < ApplicationController
   # GET /camaras.json
   def index
     @camaras = Camara.all
+      @camara = current_user.camaras.build
   end
 
   # GET /camaras/1

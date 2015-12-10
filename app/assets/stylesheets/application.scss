@@ -13,16 +13,18 @@
  *= require_tree .
  *= require_self
  */
+@import 'font-awesome.css';
+
 
  footer {
-     /* just for demo */
-     background-color: #F8F8F8;
-      border-top: 1px solid #E7E7E7;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 7em;
-      width: 100%;
+   background-color: #F8F8F8;
+   border-top: 1px solid #E7E7E7;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height: 7em;
+   width: 100%;
+   z-index: 10;
      .camera{
        background-color: #f8f8f8;
        width: 20%;
@@ -30,6 +32,10 @@
        margin: 0 auto;
        border-radius: 50%;
        position: relative;
-       bottom: 100px;
+       bottom: 115px;
+       border: gray solid 8px;
+       box-shadow: 0px 15px 25px #888888;
+       
       }
+
  }

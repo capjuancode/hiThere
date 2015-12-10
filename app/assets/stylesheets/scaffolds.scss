@@ -5,9 +5,6 @@ body {
   font-size: 13px;
   line-height: 18px;
 }
-a:visited {
-    color: white;
-}
 p, ol, ul, td {
   color: white;
   font-family: verdana, arial, helvetica, sans-serif;
@@ -23,9 +20,8 @@ pre {
 
 a {
   color: white;
-  &:visited {
-    color: white;
-  }
+  line-height: initial;
+
   &:hover {
     color: white;
     background-color: #000;
@@ -72,4 +68,5 @@ div {
     font-size: 12px;
     list-style: square;
   }
+
 }

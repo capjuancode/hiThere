@@ -4,15 +4,12 @@
 
 
 <p id="notice"><%= notice %></p>
-<%= current_user.id %>|
-<%= current_user.checkin_id %>|
-<%= current_user.group_id %>.
+
 
 
 <div class="img_container">
 
 <% if current_user.group_id != nil %>
-  <%= link_to 'New Image', new_camara_path %>| <%= link_to 'Group info', checkin_group_path(current_user.checkin_id, current_user.group_id) %>
   <br>
     <% @camaras.each do |camara| %>
 
@@ -34,6 +31,12 @@
 
       <% end %>
     <% end %>
+    <div class="menu_fotter_index_camara">
+      <%= link_to 'Back Home', root_path, class:"left_button", id:"camara_index" %>
+      <%= link_to 'Group info', checkin_group_path(current_user.checkin_id, current_user.group_id),class:"right_button", id:"camara_index" %>
+      <a href="#" onclick="camara_action(event)">  <i class="fa fa-camera"></i> </a>
+      <%= render 'form' %>
+    </div>
   <%else%>
     <h1>Must Join Group to view Images</h1>
     <br>

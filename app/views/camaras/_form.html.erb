@@ -14,10 +14,10 @@
 
   <div class="field">
     <%= f.label :img %><br>
-    <%= f.file_field :img %>
+    <%= f.file_field :img, class:"img_up", accept:"image/*;capture=camera" %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit '', class:'img_up_sub' %>
   </div>
 <% end %>
