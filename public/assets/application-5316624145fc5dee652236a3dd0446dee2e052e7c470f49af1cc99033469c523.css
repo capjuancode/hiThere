@@ -1,0 +1,352 @@
+@import url(font-awesome.css);
+/* line 5, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.buttons * {
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+/* line 14, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.buttons {
+  width: 300px;
+  display: -webkit-inline-box;
+}
+
+/* line 20, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.butFrame {
+  font-size: 1.5em;
+  font-family: oswald;
+  font-weight: 300;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/* line 41, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.butFrame .heading {
+  text-align: center;
+  font-weight: 400;
+  z-index: 999;
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  overflow: hidden;
+  left: 0px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* line 69, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.last_comment {
+  z-index: 999;
+  text-decoration: none;
+}
+
+/* line 76, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.butFrame:after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  text-align: center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 100%;
+  height: 100%;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+/* Hover Effects */
+/* line 96, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.butFrame:hover .heading {
+  height: 0px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* line 102, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.butFrame .hover {
+  z-index: 10;
+  position: absolute;
+  overflow: hidden;
+  color: #fff;
+  font-size: 2em;
+  text-align: Center;
+  width: 100%;
+  height: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.1);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* line 131, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.butFrame:hover .hover {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 136, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.butFrame:hover:after {
+  width: 120%;
+  height: 120%;
+  left: -50px;
+  top: -20px;
+}
+
+/* line 144, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.menu_fotter_index_camara {
+  text-decoration: none;
+}
+/* line 146, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.menu_fotter_index_camara .img_up_sub {
+  visibility: hidden;
+}
+/* line 149, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.menu_fotter_index_camara .left_button {
+  color: black;
+  position: fixed;
+  bottom: 25px;
+  left: 62px;
+  width: 100%;
+  z-index: 100;
+  text-decoration: none;
+  font-size: 3em;
+}
+/* line 159, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.menu_fotter_index_camara .fa {
+  position: fixed;
+  z-index: 100;
+  bottom: 41px;
+  left: 3.22em;
+  color: gray;
+  font-size: 10em !important;
+  margin: 0 auto;
+}
+/* line 168, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.menu_fotter_index_camara .right_button {
+  color: black;
+  position: fixed;
+  bottom: 25px;
+  left: 700px;
+  width: 100%;
+  z-index: 100;
+  font-size: 3em;
+  text-decoration: none;
+}
+
+/* line 179, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/camaras.css.scss */
+.camara_action {
+  background: url(/assets/camera-click-cb3330bfb82354b0e241911db1c43a4948601232820e4aa6ee9242c9675cc0b6.ico);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 7px;
+  left: 391px;
+  height: 11%;
+  width: 20%;
+  z-index: 200;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 61.25em) {
+  /* line 4, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/iphone.scss */
+  html, body {
+    background-color: black;
+    width: 100%;
+    margin: 0;
+  }
+
+  /* line 9, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/iphone.scss */
+  .butFrame {
+    height: 370px;
+  }
+
+  /* line 12, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/iphone.scss */
+  .img_container {
+    background-color: black;
+    width: 980px;
+    overflow-y: auto;
+  }
+
+  /* line 17, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/iphone.scss */
+  .yield {
+    width: 980px;
+  }
+
+  /* line 19, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/iphone.scss */
+  img.index_img {
+    width: 100%;
+  }
+
+  /* line 23, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/iphone.scss */
+  .buttons {
+    width: 100%;
+    display: inline;
+  }
+}
+/* line 1, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: black;
+  color: white;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 8, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  color: white;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: white;
+  line-height: initial;
+}
+/* line 25, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: white;
+}
+
+/* line 33, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/scaffolds.scss */
+div .field, div .actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 56, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 67, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+@import url(font-awesome.css);
+/* line 20, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/application.scss */
+footer {
+  background-color: #F8F8F8;
+  border-top: 1px solid #E7E7E7;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 7em;
+  width: 100%;
+  z-index: 10;
+}
+/* line 29, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/application.scss */
+footer .camera {
+  background-color: #f8f8f8;
+  width: 20%;
+  height: 207%;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  bottom: 115px;
+  border: gray solid 8px;
+  box-shadow: 0px 15px 25px #888888;
+}
+/* line 39, /Users/juanlopez/Desktop/juanApps/hiThere/app/assets/stylesheets/application.scss */
+footer .camera:hover {
+  box-shadow: 0px 0px 0px white;
+}
