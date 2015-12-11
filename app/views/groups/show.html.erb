@@ -1,27 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<%= current_user.id %>|
-<%= current_user.checkin_id %>|
-<%= current_user.group_id %>.
+
+<h2>
+  Wellcome <%= @user.email %>.
+</h2>
 
 <p>
-  <strong>User:</strong>
-  <%= @group.user_id %>
+
+  To:<%= @group.checkin.location_name %>
 </p>
 
 <p>
-  <strong>Group name:</strong>
-  <%= @group.group_name %>
+In: <%= @group.group_name %>
 </p>
 
-<p>
-  <strong>Checkin:</strong>
-  <%= @group.checkin.location_name %>
-</p>
+
 <%= link_to 'Join Group', new_checkin_group_grouping_table_path(@checkin, @group) %>
 
 
 <br><br>
-<%= link_to 'Edit', edit_checkin_group_path(@checkin, @group) %> |
-<%= link_to 'Back', checkin_groups_path(@checkin) %>|
+<%= link_to 'Edit', edit_checkin_group_path(@checkin, @group) %>
+<%= link_to 'Back', checkin_groups_path(@checkin) %>
 <%= link_to 'Back Home', root_path %>

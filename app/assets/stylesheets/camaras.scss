@@ -177,6 +177,9 @@
   }
 }
 .camara_action{
+  background: url("camera-click.ico");
+  background-size: cover;
+  background-repeat: no-repeat;
   position: fixed;
   bottom: 7px;
   left: 391px;

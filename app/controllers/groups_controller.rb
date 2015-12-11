@@ -17,6 +17,7 @@ class GroupsController < ApplicationController
   def show
     current_user.checkin_id, current_user.group_id = params[:checkin_id], params[:id]
     current_user.save
+    @user=current_user
   end
 
   # GET /groups/new
