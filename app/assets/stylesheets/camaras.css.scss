@@ -175,6 +175,9 @@
   font-size: 3em;
   text-decoration: none;
   }
+  .field{
+    visibility: hidden;
+  }
 }
 .camara_action{
   background: image-url('camera-click.ico');

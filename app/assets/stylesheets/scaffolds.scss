@@ -1,6 +1,9 @@
 body {
+  background: image-url('camera-click.ico');
   background-color: black;
-  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -39%;  color: white;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -24,7 +27,7 @@ a {
 
   &:hover {
     color: white;
-    
+
   }
 }
 
@@ -63,6 +66,7 @@ div {
     background-color: #c00;
     color: #fff;
   }
+
 
   ul li {
     font-size: 12px;

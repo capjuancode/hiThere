@@ -11,7 +11,7 @@
 
 <% if current_user.group_id != nil %>
   <br>
-    <% @camaras.each do |camara| %>
+    <% @camaras.reverse_each do |camara| %>
 
       <% if camara.group_id == current_user.group_id %>
         <div class="buttons">
