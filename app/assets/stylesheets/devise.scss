@@ -1,0 +1,55 @@
+.devise {
+  margin-top: 400px !important;
+  h2 {
+    font-size: 4em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  .field {
+    margin: 2em;
+    text-align: center;
+    label {
+      text-align: center;
+      font-size: 3em;
+    }
+    em{
+      font-size: 1.9em;
+    }
+    input{
+      font-size: 3em;
+    }
+    input[type="checkbox"] {
+      margin-top: 110px;
+      font-size: 3em;
+    }
+
+  }
+  .left{
+    position: fixed;
+    bottom: .3em;
+    left: 2em;
+    text-decoration: none;
+    color: black !important;
+    z-index: 100;
+    font-size: 4em
+  }
+  .right{
+    position: fixed;
+    bottom: .3em;
+    right: .7em;
+    text-decoration: none;
+    color: black !important;
+    z-index: 100;
+    font-size: 4em;
+  }
+}
+.devise_actions{
+  position: fixed;
+  z-index: 1000;
+  bottom: .2em;
+  font-size: 3em;
+  left: 40%;
+  width: 20%;
+  height: 13%;
+  border-radius: 50%;
+}
