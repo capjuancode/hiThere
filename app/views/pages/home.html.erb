@@ -1,9 +1,25 @@
-<h1>Pages#home</h1>
-<%= current_user.id %>|
-<%= current_user.checkin_id %>|
-<%= current_user.group_id %>.
-<br><br><br>
 
-<%= link_to 'checkin to locations', checkins_path%>
-<br><br><br>
-<%= link_to 'Group Img Library', pages_groups_path%>
+<div class="home">
+
+<h1>Pages#home</h1>
+
+
+<%= link_to(checkins_path) do %>
+<div class="Group_Img_checkin_link">
+  <div class="Group_Img_checkin_link_shadow">
+    <h2 class="home-titles">CheckIn new Location</h2>
+  </div>
+</div>
+<% end %>
+
+<%= link_to(pages_groups_path, html_options = {class:'groups-link-img'}) do%>
+
+<div class="Group_Img_Library_link">
+  <div class="Group_Img_Library_link_shadow">
+    <h2 class="home-titles">Previus Libraries</h2>
+  </div>
+</div>
+
+<% end %>
+
+</div>

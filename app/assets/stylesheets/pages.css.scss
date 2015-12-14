@@ -1,0 +1,46 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.home {
+  margin-top: 190px !important;
+  width: 90%;
+  margin: 0 auto;
+  h2 {
+    font-size: 4em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  a{
+    text-decoration: none !important;
+  }
+  .home-titles{
+    position: relative;
+    top: 44%;
+  }
+
+  .Group_Img_checkin_link{
+     background: image-url('checkin.jpg');
+     height: 500px;
+     border-radius: 5%;
+     width: 100%;
+     margin-bottom: 150px;
+
+    .Group_Img_checkin_link_shadow{
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+  .Group_Img_Library_link{
+     background: image-url('imgcolletion.jpg');
+     height: 500px;
+     border-radius: 5%;
+     width: 100%;
+
+    .Group_Img_Library_link_shadow{
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}
