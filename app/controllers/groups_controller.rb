@@ -18,6 +18,9 @@ class GroupsController < ApplicationController
     current_user.checkin_id, current_user.group_id = params[:checkin_id], params[:id]
     current_user.save
     @user=current_user
+    @grouping_table = @group.grouping_table.new
+    @grouping_table.user_id=current_user.id
+    @grouping_table.checkin_id=@checkin.id
   end
 
   # GET /groups/new

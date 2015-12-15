@@ -9,17 +9,21 @@
 
 <p>
 
-  To:<%= @group.checkin.location_name %> group.
+  To:<%= @group.checkin.location_name %>
 </p>
 
 <p>
-In: <%= @group.group_name %>
+In: <%= @group.group_name %>group.
 </p>
+<br>
+<%= render '/grouping_tables/form' %>
+<br>
 
-<%= link_to(new_checkin_group_grouping_table_path(@checkin, @group)) do %>
-<div class='join-circle'>
-</div>
-<% end %>
+<a href="#" onclick="grouping_tables_join(event)" class="grouping_tables_join">
+  <div class='join-circle'>
+  </div>
+ </a>
+
 </div>
 <br><br>
 <%= link_to 'Edit', edit_checkin_group_path(@checkin, @group) %>
