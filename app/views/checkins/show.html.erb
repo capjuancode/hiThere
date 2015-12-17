@@ -1,29 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<%= current_user.id %>|
-<%= current_user.checkin_id %>|
-<%= current_user.group_id %>.
-
-<p>
-  <strong>User:</strong>
-  <%= @checkin.user_id %>
-</p>
 
 <p>
   <strong>Location name:</strong>
-  <%= @checkin.location_name %>
+  <p><%= @checkin.location_name %></p>
+<% if current_user.id ==  @checkin.user_id %>
+  <%= link_to 'Edit', edit_checkin_path(@checkin) %>
+  <%= link_to 'Destroy', @checkin, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
 </p>
 
-<p>
-  <strong>Active:</strong>
-  <%= @checkin.active %>
-</p>
+
 <% if current_user.checkin_id != @checkin.id %>
-  <%= button_to 'Join This Location', join_checkin_path(@checkin) %>
-
+  <%= button_to 'Join', join_checkin_path(@checkin), class:"center-button" %>
 <br>
-
-
 <% else %>
   <% @users.each do |user| %>
     <% if user.checkin_id == @checkin.id%>
@@ -62,9 +52,11 @@
       </table>
 
       <br><br><br>
+      <%= link_to 'Creat New Group', new_checkin_group_path(@checkin), class:"center-button-link" %>
+
   <% end %>
-<%= link_to 'Creat New Group', new_checkin_group_path(@checkin) %>
+
 <br><br>
-<%= link_to 'Edit', edit_checkin_path(@checkin) %> |
-<%= link_to 'Back', checkins_path %>|
-<%= link_to 'Back Home', root_path %>
+<%= link_to 'Edit', edit_checkin_path(@checkin) %>
+<%= link_to 'Back', checkins_path, class:"left" %>
+<%= link_to 'Home', root_path, class:"right" %>

@@ -15,6 +15,19 @@
  */
 @import 'font-awesome.css';
 
+h1 {
+    font-size: 6em;
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 4em;
+    margin-bottom: 2em;
+    text-decoration: none;
+}
+p {
+    font-size: 2.35em;
+}
 .visibility_hidden{
   visibility: hidden;
 }
@@ -30,8 +43,8 @@
    z-index: 10;
      .camera{
        background-color: #f8f8f8;
-       width: 20%;
-       height: 207%;
+       width: 196px;
+       height: 200px;
        margin: 0 auto;
        border-radius: 50%;
        position: relative;
@@ -44,4 +57,56 @@
 
       }
 
+ }
+ .left{
+   position: fixed;
+   bottom: .3em;
+   left: 2em;
+   text-decoration: none;
+   color: black !important;
+   z-index: 100;
+   font-size: 4em
+ }
+ .button{
+   position: fixed;
+   z-index: 1000;
+   bottom: .2em;
+   font-size: 3em;
+   left: 40%;
+   width: 20%;
+   height: 13%;
+   border-radius: 50%;
+ }
+ .right{
+   position: fixed;
+   bottom: .3em;
+   right: .7em;
+   text-decoration: none;
+   color: black !important;
+   z-index: 100;
+   font-size: 4em;
+ }
+ .center-button-link{
+   position: fixed;
+    bottom: 1.2%;
+    left: 40%;
+    z-index: 1000;
+    color: black;
+    font-size: 3em;
+    text-decoration: none;
+    text-align: center;
+    line-height: 59px;
+    height: 190px;
+    width: 196px;
+    border-radius: 50%;
+ }
+ .center-button{
+   position: fixed;
+   z-index: 1000;
+   bottom: 0.3em;
+   font-size: 3em;
+   left: 40%;
+   width: 20%;
+   height: 11.6%;
+   border-radius: 50%;
  }

@@ -5,13 +5,12 @@ body {
   background-size: cover;
   background-position-y: -39%;  color: white;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
   line-height: 18px;
 }
 p, ol, ul, td {
   color: white;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 2.5em  ;
   line-height: 18px;
 }
 
@@ -73,4 +72,15 @@ div {
     list-style: square;
   }
 
+}
+.form {
+  text-align: center;
+   font-size: 2.5em;
+   h1{
+     font-size: 3em;
+   }
+   input{
+     font-size: 1.5em;
+margin-top: 1.5em;
+   }
 }

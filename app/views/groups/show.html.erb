@@ -13,8 +13,12 @@
 </p>
 
 <p>
-In: <%= @group.group_name %>group.
+In: <%= @group.group_name %> group.
 </p>
+
+<% @users.each do |users| %>
+  <%= users.email %><br>
+<% end %>
 <br>
 <%= render '/grouping_tables/form' %>
 <br>
@@ -28,4 +32,4 @@ In: <%= @group.group_name %>group.
 <br><br>
 <%= link_to 'Edit', edit_checkin_group_path(@checkin, @group) %>
 <%= link_to 'Back', checkin_groups_path(@checkin) %>
-<%= link_to 'Back Home', root_path %>
+<%= link_to 'Home', root_path %>

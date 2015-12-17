@@ -21,6 +21,8 @@ class GroupsController < ApplicationController
     @grouping_table = @group.grouping_table.new
     @grouping_table.user_id=current_user.id
     @grouping_table.checkin_id=@checkin.id
+
+    find_user
   end
 
   # GET /groups/new
@@ -89,5 +91,14 @@ class GroupsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def group_params
       params.require(:group).permit( :user_id, :group_name, :checkin_id)
+    end
+
+    def find_user
+      @grouping_tables=GroupingTable.where(group_id: params[:id], checkin_id: params[:checkin_id])
+      @users = Array.new
+      @grouping_tables.each do |group|
+        user = User.find(group.user_id)
+        @users<<user
+      end
     end
 end

@@ -1,3 +1,6 @@
+<div class="form">
+
+
 <%= form_for([@checkin, @group] ) do |f| %>
   <% if @group.errors.any? %>
     <div id="error_explanation">
@@ -22,7 +25,8 @@
   <div class="field">
     <%= f.hidden_field :checkin_id %>
   </div>
+  </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create", class:"center-button"%>
   </div>
 <% end %>

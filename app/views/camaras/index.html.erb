@@ -32,7 +32,7 @@
       <% end %>
     <% end %>
     <div class="menu_fotter_index_camara">
-      <%= link_to 'Back Home', root_path, class:"left_button", id:"camara_index" %>
+      <%= link_to 'Home', root_path, class:"left_button", id:"camara_index" %>
       <%= link_to 'Group info', checkin_group_path(current_user.checkin_id, current_user.group_id),class:"right_button", id:"camara_index" %>
       <a href="#" onclick="camara_action(event)" class="camara_action">  </a>
       <%= render 'form' %>
@@ -40,7 +40,7 @@
   <%else%>
     <h1>Must Join Group to view Images</h1>
     <br>
-    <%= link_to 'Back Home', root_path %>
+    <%= link_to 'Home', root_path %>
   <% end %>
 </div>
 
