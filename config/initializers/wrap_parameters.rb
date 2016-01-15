@@ -13,5 +13,5 @@ end
 #  self.include_root_in_json = true
 # end
 
-Paperclip::Attachment.default_options[:url] = 'hithereapp.s3.amazonaws.com'
+Paperclip::Attachment.default_options[:url] = 'hithereimg.s3.amazonaws.com'
 Paperclip::Attachment.default_options[:path] = '/:class/:attachment/:id_partition/:style/:filename'
